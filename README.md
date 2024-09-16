@@ -6,8 +6,10 @@ This repository includes two distinct projects utilizing Neo4j and Python: a Neo
 
 This repository features two projects:
 
-Neo4j Resume Graph: Converts resume data into a Neo4j graph database to visualize professional profiles.
-Neo4j Social Network App: Implements a CLI-based social network application with user management, friend interactions, and more.
+### Neo4j Resume Graph: 
+Converts resume data into a Neo4j graph database to visualize professional profiles.
+### Neo4j Social Network App: 
+Implements a CLI-based social network application with user management, friend interactions, and more.
 
 ## Task 1: Neo4j Resume Graph
 
@@ -19,54 +21,55 @@ In this project, we use Neo4j to model and query professional profiles. The code
 
 ## Key Features:
 
-Create Nodes:
+### Create Nodes:
     Created nodes for different entities such as Person, Skill, Education, and Experience.
 
-Define Relationships:
+### Define Relationships:
     Established relationships like HAS_SKILL, STUDIED_AT, and WORKED_AT to link nodes.
 
-Run Queries:
+### Run Queries:
     Skills Query: Retrieve skills associated with a person.
     Education Query: Fetch educational details such as institution name, course, and completion date.
     Experience Query: List professional experiences including company, position, duration, and location.
 
 ## Task 2: Neo4j Social Network App
 
-Description: Developed a social network application using Neo4j to handle various user interactions and data management tasks. The application is designed to facilitate user registration, profile management, and social interactions such as friendships, posts, comments, and group activities.
+### Description: 
+Developed a social network application using Neo4j to handle various user interactions and data management tasks. The application is designed to facilitate user registration, profile management, and social interactions such as friendships, posts, comments, and group activities.
 
 ## Key Features:
 
-User Registration:
+### User Registration:
     Added users to the network with attributes like name, age, location, and interests.
 
-Profile Management:
+### Profile Management:
     Updated user information, including age, location, and interests.
 
-Friendship Management:
+### Friendship Management:
     Enabled users to add and remove friends.
     Sent, accepted, or rejected friend requests.
 
-Post Management:
+### Post Management:
     Created and managed user posts.
     Allowed users to like and comment on posts.
 
-Group Management:
+### Group Management:
     Created and managed user groups.
     Enabled users to join groups and view group members.
 
-Friend Recommendations:
+### Friend Recommendations:
     Provided recommendations for new friends based on mutual connections.
 
-User Search:
+### User Search:
     Implemented search functionality to find users based on name, location, and interests.
 
 # Development  
 
-Connect to Neo4j:
+### Connect to Neo4j:
     Use the neo4j Python package to interact with the database.
     Implement functions for managing users, friendships, and interactions.
 
-CLI Interface:
+### CLI Interface:
     Implement a command-line interface to interact with the application.
     Provide commands for user management, friend requests, and more.
 
