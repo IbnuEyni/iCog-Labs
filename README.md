@@ -60,7 +60,7 @@ Description: Developed a social network application using Neo4j to handle variou
     User Search:
         Implemented search functionality to find users based on name, location, and interests.
 
-## Development  
+# Development  
 
     Connect to Neo4j:
         Use the neo4j Python package to interact with the database.
@@ -80,7 +80,7 @@ Description: Developed a social network application using Neo4j to handle variou
 
     Clone the Repository:
 
-git clone https://github.com/yourusername/neo4j-projects.git
+git clone https://github.com/IbnuEyni/iCog-Labs.git
 
     Install Dependencies:
 
@@ -92,4 +92,29 @@ git clone https://github.com/yourusername/neo4j-projects.git
 
 ## Contributing
 
-Feel free to submit issues, pull requests, or suggestions to improve the projects. Contributions are welcome!
+We welcome contributions to this project! To contribute, please follow these steps:
+
+    Fork the Repository:
+        Click the "Fork" button at the top right of this page to create your own copy of the repository.
+
+    Create a New Branch:
+
+git checkout -b new_feature
+
+Make Your Changes:
+
+    Implement your feature or fix in the new branch.
+
+Commit Your Changes:
+
+git add .
+git commit -m "Add new feature"
+
+Push to Your Forked Repository:
+
+git push origin new_feature
+
+Create a Pull Request:
+
+    Go to the "Pull Requests" tab of the original repository and click "New Pull Request."
+    Select your new_feature branch and submit the pull request.
