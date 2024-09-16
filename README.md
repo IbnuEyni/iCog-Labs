@@ -87,7 +87,7 @@ Error Handling: Implement robust error handling to manage database interactions 
 Clone the Repository:
 
     git clone https://github.com/IbnuEyni/iCog-Labs.git
-    
+
 ### Prerequisites
 
 Install Neo4j and set it up on your local machine.
@@ -106,22 +106,9 @@ Add your Neo4j credentials to the .env file using the following format:
 
 Ensure that your .env file is included in your .gitignore to avoid exposing sensitive credentials.
 
-In your Python code, use the dotenv package to load these credentials:
-
-    from dotenv import load_dotenv
-    import os
-
-    load_dotenv()
-
-    uri = "bolt://localhost:7687"
-    username = os.getenv("NEO4J_USERNAME")
-    password = os.getenv("NEO4J_PASSWORD")
-
-    driver = GraphDatabase.driver(uri, auth=(username, password))
-
 Running the Application
 
-After configuring your environment, you can run the application with the CLI interface for both the Resume Graph and Social Network App.
+After configuring your environment, you can run the application with the CLI interface for only for Social Network App.
 
 ## Contributing
 
