@@ -84,8 +84,9 @@ Install Dependencies:
 
     pip install neo4j
 Run the Scripts:
- Neo4j Resume Graph: Update the script with your Neo4j connection details and run it to query resume data.
- Neo4j Social Network App: Use the CLI interface to interact with the social network application.
+
+    Neo4j Resume Graph: Update the script with your Neo4j connection details and run it to query resume data.
+    Neo4j Social Network App: Use the CLI interface to interact with the social network application.
 
 ## Contributing
 
@@ -99,11 +100,14 @@ Create a New Branch:
     git checkout -b new_feature
 
 Make Your Changes:
+
 Implement your feature or fix in the new branch.
 Commit Your Changes:
+
     git add .
     git commit -m "Add new feature"
 Push to Your Forked Repository:
+
     git push origin new_feature
 Create a Pull Request:
 Go to the "Pull Requests" tab of the original repository and click "New Pull Request."
