@@ -43,28 +43,28 @@ Developed a social network application using Neo4j to handle various user intera
 ## Key Features:
 
 #### User Registration:
-    Added users to the network with attributes like name, age, location, and interests.
+Added users to the network with attributes like name, age, location, and interests.
 
 #### Profile Management:
-    Updated user information, including age, location, and interests.
+Updated user information, including age, location, and interests.
 
 #### Friendship Management:
-    Enabled users to add and remove friends.
-    Sent, accepted, or rejected friend requests.
+Enabled users to add and remove friends.
+Sent, accepted, or rejected friend requests.
 
 #### Post Management:
-    Created and managed user posts.
-    Allowed users to like and comment on posts.
+Created and managed user posts.
+Allowed users to like and comment on posts.
 
 #### Group Management:
-    Created and managed user groups.
-    Enabled users to join groups and view group members.
+Created and managed user groups.
+Enabled users to join groups and view group members.
 
 #### Friend Recommendations:
-    Provided recommendations for new friends based on mutual connections.
+Provided recommendations for new friends based on mutual connections.
 
 #### User Search:
-    Implemented search functionality to find users based on name, location, and interests.
+Implemented search functionality to find users based on name, location, and interests.
 
 # Development  
 
