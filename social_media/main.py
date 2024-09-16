@@ -1,8 +1,12 @@
 from social_media_script import SocialNetworkApp
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+# Connect to Neo4
 
 def main():
-    app = SocialNetworkApp("bolt://localhost:7687", "neo4j", "NEO$Jneo")
+    app = SocialNetworkApp("bolt://localhost:7687", os.getenv('NEO4J_USERNAME'), os.getenv("NEO4J_PASSWORD"))
 
     while True:
         print("\n1. Register User")

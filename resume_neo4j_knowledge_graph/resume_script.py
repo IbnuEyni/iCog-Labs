@@ -1,8 +1,11 @@
 from neo4j import GraphDatabase
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 # Connect to Neo4j
 uri = "bolt://localhost:7687"
-driver = GraphDatabase.driver(uri, auth=("neo4j", "NEO$Jneo"))
+driver = GraphDatabase.driver(uri, auth=(os.getenv('NEO4J_USERNAME'), os.getenv('NEO4J_PASSWORD')))
 
 # Function to run a query and fetch all records
 def run_query(query):

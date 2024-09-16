@@ -83,16 +83,45 @@ Function Implementation: Implement functions for each feature (e.g., create_user
 Error Handling: Implement robust error handling to manage database interactions and user inputs.
 
 ## Getting Started
+
 Clone the Repository:
 
     git clone https://github.com/IbnuEyni/iCog-Labs.git
-Install Dependencies:
+    
+### Prerequisites
 
-    pip install neo4j
-Run the Scripts:
+Install Neo4j and set it up on your local machine.
+Install the required Python packages using:
 
-    Neo4j Resume Graph: Update the script with your Neo4j connection details and run it to query resume data.
-    Neo4j Social Network App: Use the CLI interface to interact with the social network application.
+    pip install -r requirements.txt
+
+Neo4j Configuration
+
+Create a .env file in the root directory of your project.
+
+Add your Neo4j credentials to the .env file using the following format:
+
+    NEO4J_USERNAME=your-username
+    NEO4J_PASSWORD=your-password
+
+Ensure that your .env file is included in your .gitignore to avoid exposing sensitive credentials.
+
+In your Python code, use the dotenv package to load these credentials:
+
+    from dotenv import load_dotenv
+    import os
+
+    load_dotenv()
+
+    uri = "bolt://localhost:7687"
+    username = os.getenv("NEO4J_USERNAME")
+    password = os.getenv("NEO4J_PASSWORD")
+
+    driver = GraphDatabase.driver(uri, auth=(username, password))
+
+Running the Application
+
+After configuring your environment, you can run the application with the CLI interface for both the Resume Graph and Social Network App.
 
 ## Contributing
 
