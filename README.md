@@ -77,15 +77,12 @@ Function Implementation: Implement functions for each feature (e.g., create_user
 Error Handling: Implement robust error handling to manage database interactions and user inputs.
 
 ## Getting Started
-
 Clone the Repository:
 
     git clone https://github.com/IbnuEyni/iCog-Labs.git
-
 Install Dependencies:
 
     pip install neo4j
-
 Run the Scripts:
  Neo4j Resume Graph: Update the script with your Neo4j connection details and run it to query resume data.
  Neo4j Social Network App: Use the CLI interface to interact with the social network application.
@@ -102,19 +99,12 @@ Create a New Branch:
     git checkout -b new_feature
 
 Make Your Changes:
-
 Implement your feature or fix in the new branch.
-
 Commit Your Changes:
-
     git add .
     git commit -m "Add new feature"
-
 Push to Your Forked Repository:
-
     git push origin new_feature
-
 Create a Pull Request:
-
 Go to the "Pull Requests" tab of the original repository and click "New Pull Request."
 Select your new_feature branch and submit the pull request.
