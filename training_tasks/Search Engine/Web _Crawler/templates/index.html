@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: auto;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .product {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .product h3 {
+            margin: 0;
+            color: #4CAF50;
+        }
+        .product p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Find Similar Products</h1>
+        <form method="POST">
+            <label for="product_name">Product Name:</label>
+            <input type="text" id="product_name" name="product_name" required>
+            
+            <label for="product_price">Target Price ($):</label>
+            <input type="number" step="0.01" id="product_price" name="product_price" required>
+            
+            <label for="num_similar">Number of Similar Products:</label>
+            <input type="number" id="num_similar" name="num_similar" min="1" required>
+            
+            <input type="submit" value="Search">
+        </form>
+
+        {% if products %}
+            <h2>Similar Products Found:</h2>
+            {% for score, product in products %}
+                <div class="product">
+                    <h3>{{ product['name'] }}</h3>
+                    <p><strong>Price:</strong> {{ product['price'] }}</p>
+                    <p><strong>URL:</strong> <a href="{{ product['url'] }}" target="_blank">{{ product['url'] }}</a></p>
+                    <p><strong>Similarity Score:</strong> {{ "%.2f"|format(score) }}</p>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</body>
+</html>

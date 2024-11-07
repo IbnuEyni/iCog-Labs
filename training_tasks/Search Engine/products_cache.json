@@ -1,0 +1,352 @@
+[
+    {
+        "url": "https://www.scrapingcourse.com/ecommerce/",
+        "image": "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh09-blue_main.jpg",
+        "name": "Abominable Hoodie",
+        "price": "$69.00",
+        "price_value": 69.0
+    },
+    {
+        "url": "https://www.scrapingcourse.com/ecommerce/page/10/",
+        "image": "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wb05-red-0.jpg",
+        "name": "Savvy Shoulder Tote",
+        "price": "$32.00 $24.00",
+        "price_value": null
+    },
+    {
+        "url": "https://www.scrapingcourse.com/ecommerce/page/1/",
+        "image": "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh09-blue_main.jpg",
+        "name": "Abominable Hoodie",
+        "price": "$69.00",
+        "price_value": 69.0
+    },
+    {
+        "url": "https://www.scrapingcourse.com/ecommerce/page/11/",
+        "image": "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/luma-yoga-strap.jpg",
+        "name": "Sprite Yoga Strap 10 foot",
+        "price": "$21.00",
+        "price_value": 21.0
+    },
+    {
+        "url": "https://www.scrapingcourse.com/ecommerce/page/12/",
+        "image": "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh04-gray_main.jpg",
+        "name": "Torque Power Short",
+        "price": "$32.50",
+        "price_value": 32.5
+    },
+    {
+        "url": "https://www.scrapingcourse.com/ecommerce/page/2/",
+        "image": "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt11-blue_main.jpg",
+        "name": "Atlas Fitness Tank",
+        "price": "$18.00",
+        "price_value": 18.0
+    },
+    {
+        "url": "https://www.scrapingcourse.com/ecommerce/page/3/",
+        "image": "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt12-blue_main.jpg",
+        "name": "Cassius Sparring Tank",
+        "price": "$18.00",
+        "price_value": 18.0
+    },
+    {
+        "url": "https://www.scrapingcourse.com/ecommerce/page/4/",
+        "image": "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp12-gray_main.jpg",
+        "name": "Deirdre Relaxed-Fit Capri",
+        "price": "$63.00",
+        "price_value": 63.0
+    },
+    {
+        "url": "https://www.scrapingcourse.com/ecommerce/page/5/",
+        "image": "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh01-black_main.jpg",
+        "name": "Fiona Fitness Short",
+        "price": "$29.00",
+        "price_value": 29.0
+    },
+    {
+        "url": "https://www.scrapingcourse.com/ecommerce/page/6/",
+        "image": "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh07-gray_main.jpg",
+        "name": "Hero Hoodie",
+        "price": "$54.00",
+        "price_value": 54.0
+    },
+    {
+        "url": "https://www.scrapingcourse.com/ecommerce/page/7/",
+        "image": "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp05-blue_main.jpg",
+        "name": "Kratos Gym Pant",
+        "price": "$57.00",
+        "price_value": 57.0
+    },
+    {
+        "url": "https://www.scrapingcourse.com/ecommerce/page/8/",
+        "image": "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh09-gray_main.jpg",
+        "name": "Mimi All-Purpose Short",
+        "price": "$44.00",
+        "price_value": 44.0
+    },
+    {
+        "url": "https://www.scrapingcourse.com/ecommerce/page/9/",
+        "image": "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh12-red_main.jpg",
+        "name": "Pierce Gym Short",
+        "price": "$27.00",
+        "price_value": 27.0
+    },
+    {
+        "url": "https://woo.com",
+        "image": "https://woocommerce.com/wp-content/uploads/2023/03/sell-img.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/about/",
+        "image": "https://woocommerce.com/wp-content/uploads/2020/02/about-woo-founders@2x.jpg",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/about/#main-navigation",
+        "image": "https://woocommerce.com/wp-content/uploads/2020/02/about-woo-founders@2x.jpg",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/about/#page",
+        "image": "https://woocommerce.com/wp-content/uploads/2020/02/about-woo-founders@2x.jpg",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/community/",
+        "image": "https://woocommerce.com/wp-content/uploads/2024/07/Property-1Variant2.svg",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/community/#h-how-to-get-involved",
+        "image": "https://woocommerce.com/wp-content/uploads/2024/07/Property-1Variant2.svg",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/community/#main-navigation",
+        "image": "https://woocommerce.com/wp-content/uploads/2024/07/Property-1Variant2.svg",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/community/#page",
+        "image": "https://woocommerce.com/wp-content/uploads/2024/07/Property-1Variant2.svg",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services/",
+        "image": "https://woocommerce.com/wp-content/uploads/2024/07/hero-agencypartner-lg_1fec52.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services/#find-partner",
+        "image": "https://woocommerce.com/wp-content/uploads/2024/07/hero-agencypartner-lg_1fec52.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services/#main-navigation",
+        "image": "https://woocommerce.com/wp-content/uploads/2024/07/hero-agencypartner-lg_1fec52.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services/#page",
+        "image": "https://woocommerce.com/wp-content/uploads/2024/07/hero-agencypartner-lg_1fec52.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services/cartknitter/235858498/",
+        "image": "https://a8cforagenciesportfolio.wordpress.com/wp-content/uploads/2024/08/logo-image-235858498.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services#find-partner",
+        "image": "https://woocommerce.com/wp-content/uploads/2024/07/hero-agencypartner-lg_1fec52.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services#main-navigation",
+        "image": "https://woocommerce.com/wp-content/uploads/2024/07/hero-agencypartner-lg_1fec52.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services#page",
+        "image": "https://woocommerce.com/wp-content/uploads/2024/07/hero-agencypartner-lg_1fec52.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services/cartknitter/235858498/#main-navigation",
+        "image": "https://a8cforagenciesportfolio.wordpress.com/wp-content/uploads/2024/08/logo-image-235858498.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services/cartknitter/235858498/#page",
+        "image": "https://a8cforagenciesportfolio.wordpress.com/wp-content/uploads/2024/08/logo-image-235858498.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services/cedcommerce-llc/232662706/",
+        "image": "https://a8cforagenciesportfolio.wordpress.com/wp-content/uploads/2024/08/logo-image-232662706.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services/cedcommerce-llc/232662706/#main-navigation",
+        "image": "https://a8cforagenciesportfolio.wordpress.com/wp-content/uploads/2024/08/logo-image-232662706.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services/cedcommerce-llc/232662706/#page",
+        "image": "https://a8cforagenciesportfolio.wordpress.com/wp-content/uploads/2024/08/logo-image-232662706.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/development-services/cedcommerce-llc/232662706?redirect_link=https%3A%2F%2Fcedcommerce.com%2Fcontacts",
+        "image": "https://www.facebook.com/tr?id=232349593131046&ev=PageView\r\n    &noscript=1",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": " https://bigcommerce.cedcommerce.com/omni-importer-migrator",
+        "image": "//bigcommerce.cedcommerce.com/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/",
+        "image": "https://woocommerce.com/wp-content/uploads/2023/03/sell-img.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/#main-navigation",
+        "image": "https://woocommerce.com/wp-content/uploads/2023/03/sell-img.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/#page",
+        "image": "https://woocommerce.com/wp-content/uploads/2023/03/sell-img.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/blog",
+        "image": "https://woocommerce.com/wp-content/themes/woo/images/blog/add-to-cart.svg",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/blog#main-navigation",
+        "image": "https://woocommerce.com/wp-content/themes/woo/images/blog/add-to-cart.svg",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/blog#page",
+        "image": "https://woocommerce.com/wp-content/themes/woo/images/blog/add-to-cart.svg",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/blog/",
+        "image": "https://woocommerce.com/wp-content/themes/woo/images/blog/add-to-cart.svg",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/blog/#main-navigation",
+        "image": "https://woocommerce.com/wp-content/themes/woo/images/blog/add-to-cart.svg",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/blog/#page",
+        "image": "https://woocommerce.com/wp-content/themes/woo/images/blog/add-to-cart.svg",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/careers",
+        "image": "https://woocommerce.com/wp-content/uploads/2021/11/pd-icon@2x.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/careers#main-navigation",
+        "image": "https://woocommerce.com/wp-content/uploads/2021/11/pd-icon@2x.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/careers#page",
+        "image": "https://woocommerce.com/wp-content/uploads/2021/11/pd-icon@2x.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/careers/",
+        "image": "https://woocommerce.com/wp-content/uploads/2021/11/pd-icon@2x.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    },
+    {
+        "url": "http://woocommerce.com/careers/#main-navigation",
+        "image": "https://woocommerce.com/wp-content/uploads/2021/11/pd-icon@2x.png",
+        "name": "N/A",
+        "price": "N/A",
+        "price_value": null
+    }
+]

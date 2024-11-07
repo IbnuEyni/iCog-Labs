@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Upload and Query</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            border-radius: 10px;
+        }
+        .form-control {
+            border-radius: 5px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .chat-box {
+            margin-top: 20px;
+            background-color: rgba(161, 161, 161, 0.108);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 10px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .chat-message {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .user-message {
+            text-align: right;
+        }
+        .bot-message {
+            text-align: left;
+        }
+        .chat-message div {
+            max-width: 60%;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: smaller;
+        }
+        .chat-message.user-message div {
+            background-color: #1b1b1b8e;
+            color: white;
+            border-radius: 20px 0px 20px 20px;
+            margin-left: auto;
+        }
+        .chat-message.bot-message div {
+            background-color: #ffffffb8;
+            color: black;
+            border-radius: 0px 20px 20px 20px;
+            margin-right: auto;
+        }
+        .chat-box img {
+            border-radius: 50%;
+            max-height: 35px;
+            max-width: 50px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card mx-auto" style="max-width: 600px;">
+        <div class="card-header text-center">
+            <h3>PDF Upload and Query</h3>
+        </div>
+        <div class="card-body">
+            <!-- File Upload Form -->
+            <form id="uploadForm" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="pdf" class="form-label">Choose a PDF file</label>
+                    <input class="form-control" type="file" id="pdf" name="pdf" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </form>
+            
+            <!-- Chat Box -->
+            <div id="chatBox" class="chat-box" style="display: none;">
+                <!-- User and Bot messages will appear here -->
+            </div>
+
+            <!-- Question Form (Initially Hidden) -->
+            <div id="questionFormContainer" style="display: none;">
+                <form id="questionForm" method="post">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="query" class="form-label">Ask a question</label>
+                        <input class="form-control" type="text" id="query" name="query" placeholder="Enter your question here" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const uploadForm = document.getElementById('uploadForm');
+        const questionFormContainer = document.getElementById('questionFormContainer');
+        const questionForm = document.getElementById('questionForm');
+        const chatBox = document.getElementById('chatBox');
+
+        uploadForm.onsubmit = function(e) {
+            e.preventDefault();
+            console.log("Upload form submitted.");
+
+            const formData = new FormData(uploadForm);
+
+            fetch("/", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'X-CSRFToken': '{{ csrf_token }}',
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Upload response received:", data);
+                if (data.success) {
+                    questionFormContainer.style.display = 'block';
+                    chatBox.style.display = 'block';
+                    chatBox.innerHTML += `<div class="chat-message user-message"><div>PDF uploaded successfully.</div></div>`;
+                }
+            })
+            .catch(error => {
+                console.error("Error during upload:", error);
+            });
+        };
+
+        questionForm.onsubmit = function(e) {
+            e.preventDefault();
+            console.log("Question form submitted.");
+
+            const formData = new FormData(questionForm);
+            const userQuery = formData.get('query');
+            chatBox.innerHTML += `<div class="chat-message user-message"><div>${userQuery}</div></div>`;
+
+            fetch("/", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'X-CSRFToken': '{{ csrf_token }}',
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Query response received:", data);
+                if (data.answer) {
+                    chatBox.innerHTML += `<div class="chat-message bot-message"><div>${data.answer}</div></div>`;
+                    questionForm.reset();
+                }
+            })
+            .catch(error => {
+                console.error("Error during query:", error);
+            });
+        };
+    });
+</script>
+</body>
+</html>

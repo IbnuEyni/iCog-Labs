@@ -1,0 +1,15 @@
+pypdf==4.0.0
+PyPDF2==3.0.1
+pandas==2.2.0
+chromadb==0.4.22
+google-generativeai==0.7.0 
+langchain
+langchain_community
+langchain-google-genai
+python-dotenv
+streamlit
+langchain_experimental
+sentence-transformers
+langchain_chroma
+langchainhub
+rapidocr-onnxruntime 

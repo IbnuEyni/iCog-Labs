@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask a Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #results {
+            max-width: 100%;
+            margin: 20px 0;
+        }
+        #results p {
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        #results strong {
+            display: block; 
+            color: #333;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .button:hover {
+            background: linear-gradient(135deg, #0056b3, #003d7a);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .button:active {
+            background: linear-gradient(135deg, #003d7a, #0056b3);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ask a Question</h1>
+        <form id="queryForm" action="{% url 'process_query' %}" method="post">
+            {% csrf_token %}
+            <div>
+                <label for="query">Enter your question:</label>
+                <input type="text" id="query" name="query" required>
+            </div>
+            <div>
+                <label for="n">Number of results to return:</label>
+                <input type="number" id="n" name="n" min="1" value="1" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="results">
+            <!-- Results will be displayed here -->
+        </div>
+        <div class="button-container">
+            <a href="{% url 'upload_document_page' %}" class="button">Upload Additional Documents</a>
+            <a href="{% url 'list_documents_page' %}" class="button">View List of Documents</a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('queryForm').onsubmit = function(e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            const formData = new FormData(this); // Collect form data
+
+            fetch("{% url 'process_query' %}", {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-CSRFToken': '{{ csrf_token }}' // Include CSRF token
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultsDiv = document.getElementById('results');
+                resultsDiv.innerHTML = ''; // Clear previous results
+
+                if (data.result && Array.isArray(data.result)) {
+                    data.result.forEach(item => {
+                        resultsDiv.innerHTML += `<p><strong>${item.title}</strong>: ${item.content} <br> <strong>Similarity:</strong> ${item.similarity.toFixed(2)}</p>`;
+                    });
+                } else {
+                    resultsDiv.innerHTML = `<p>${data.error || 'No results found.'}</p>`;
+                }
+            })
+            .catch(error => {
+                document.getElementById('results').innerHTML = `<p>Error during query processing.</p>`;
+            });
+        };
+    </script>
+</body>
+</html>
