@@ -124,10 +124,6 @@ This repository provides an overview of my training modules and work projects co
 
 **Contributions:** Auto-Suggestion Algorithm, Real-Time Query Processing, User Experience Optimization
 
----
-
 ## Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request for any suggestions or improvements.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
