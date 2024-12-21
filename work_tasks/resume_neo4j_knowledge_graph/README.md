@@ -1,4 +1,4 @@
-# Neo4j Projects: Resume Graph & Social Network App
+# Neo4j Projects: Resume Graph
 
 This repository includes two distinct projects utilizing Neo4j and Python: a Neo4j Resume Graph and a Neo4j Social Network Application. The first project transforms a resume into a Neo4j knowledge graph, while the second develops a social network application with CLI interactions.
 
