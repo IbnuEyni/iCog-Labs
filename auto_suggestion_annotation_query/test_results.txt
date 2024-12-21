@@ -1,0 +1,200 @@
+
+Enter node label: gene
+Enter property name: gene_name
+Enter value to search for similar gene_name: Metazoa_S  
+Similar values found with their similarity percentages:
+Value: Metazoa_SRP
+Similarity Score: 90.00%
+
+Enter node label: gene
+Enter property name: gene_name
+Enter value to search for similar gene_name: ENSG00000232   
+Similar values found with their similarity percentages:
+Value: ENSG00000232738
+Similarity Score: 89.00%
+Value: ENSG00000235292
+Similarity Score: 89.00%
+Value: ENSG00000232900
+Similarity Score: 89.00%
+Value: ENSG00000232448
+Similarity Score: 89.00%
+Value: ENSG00000235036
+Similarity Score: 81.00%
+Value: ENSG00000269931
+Similarity Score: 81.00%
+Value: ENSG00000271298
+Similarity Score: 81.00%
+Value: ENSG00000230506
+Similarity Score: 81.00%
+Value: ENSG00000286936
+Similarity Score: 81.00%
+Value: ENSG00000230990
+Similarity Score: 81.00%
+
+Enter node label: gene
+Enter property name: id
+Enter value to search for similar id: ensg00000273   
+Similar values found with their similarity percentages:
+Value: ensg00000271397
+Similarity Score: 89.00%
+Value: ensg00000232738
+Similarity Score: 89.00%
+Value: ensg00000273745
+Similarity Score: 89.00%
+Value: ensg00000285723
+Similarity Score: 89.00%
+Value: ensg00000235292
+Similarity Score: 81.00%
+Value: ensg00000132623
+Similarity Score: 81.00%
+Value: ensg00000230990
+Similarity Score: 81.00%
+Value: ensg00000230750
+Similarity Score: 81.00%
+Value: ensg00000233048
+Similarity Score: 81.00%
+Value: ensg00000235036
+Similarity Score: 81.00%
+
+Enter node label: transcript
+Enter property name: transcript_name
+Enter value to search for similar transcript_name: ENST0000042876   
+Similar values found with their similarity percentages:
+Value: ENST00000428769
+Similarity Score: 97.00%
+Value: ENST00000442389
+Similarity Score: 83.00%
+Value: ENST00000651426
+Similarity Score: 83.00%
+Value: ENST00000418690
+Similarity Score: 83.00%
+Value: ENST00000424931
+Similarity Score: 80.00%
+Value: ENST00000662420
+Similarity Score: 76.00%
+Value: ENST00000668688
+Similarity Score: 76.00%
+Value: ENST00000666460
+Similarity Score: 76.00%
+Value: ENST00000603272
+Similarity Score: 76.00%
+Value: ENST00000455132
+Similarity Score: 76.00%
+
+Enter node label: transcript
+Enter property name: transcript_type
+Enter value to search for similar transcript_type: protein_coding_CDS_not_defined
+Similar values found with their similarity percentages:
+Value: protein_coding_CDS_not_defined
+Similarity Score: 100.00%
+Value: protein_coding
+Similarity Score: 90.00%
+
+Enter node label: pathway
+Enter property name: id
+Enter value to search for similar id: r-hsa-1648  
+Similar values found with their similarity percentages:
+Value: r-hsa-164378
+Similarity Score: 91.00%
+Value: r-hsa-176408
+Similarity Score: 91.00%
+Value: r-hsa-193648
+Similarity Score: 91.00%
+Value: r-hsa-164843
+Similarity Score: 91.00%
+Value: r-hsa-416482
+Similarity Score: 91.00%
+Value: r-hsa-164938
+Similarity Score: 91.00%
+Value: r-hsa-1566948
+Similarity Score: 87.00%
+Value: r-hsa-1643685
+Similarity Score: 87.00%
+Value: r-hsa-1614558
+Similarity Score: 87.00%
+Value: r-hsa-1169408
+Similarity Score: 87.00%
+
+Enter node label: snp
+Enter property name: ref
+Enter value to search for similar ref: A
+Similar values found with their similarity percentages:
+Value: A
+Similarity Score: 100.00%
+Value: AG
+Similarity Score: 95.00%
+Value: TTAA
+Similarity Score: 90.00%
+Value: CGCA
+Similarity Score: 90.00%
+Value: CCTGGAA
+Similarity Score: 90.00%
+Value: GAGTT
+Similarity Score: 90.00%
+Value: ATTCC
+Similarity Score: 90.00%
+Value: TATTAA
+Similarity Score: 90.00%
+Value: TGGAAC
+Similarity Score: 90.00%
+Value: TACTC
+Similarity Score: 90.00%
+
+Enter node label: gene
+Enter property name: gene_type
+Enter value to search for similar gene_type: lRNA          
+Similar values found with their similarity percentages:
+Value: lncRNA
+Similarity Score: 90.00%
+Value: miRNA
+Similarity Score: 90.00%
+
+Enter node label: pathway
+Enter property name: pathway_name
+Enter value to search for similar pathway_name: APC/C:Cdc20
+Similar values found with their similarity percentages:
+Value: APC/C:Cdc20 mediated degradation of Securin
+Similarity Score: 90.00%
+Value: APC/C:Cdc20 mediated degradation of mitotic proteins
+Similarity Score: 90.00%
+Value: Conversion from APC/C:Cdc20 to APC/C:Cdh1 in late anaphase
+Similarity Score: 90.00%
+Value: Activation of APC/C and APC/C:Cdc20 mediated degradation of mitotic proteins
+Similarity Score: 90.00%
+Value: APC/C:Cdc20 mediated degradation of Cyclin B
+Similarity Score: 90.00%
+Value: APC truncation mutants are not K63 polyubiquitinated
+Similarity Score: 86.00%
+Value: Polymerase switching on the C-strand of the telomere
+Similarity Score: 86.00%
+Value: APC truncation mutants have impaired AXIN binding
+Similarity Score: 86.00%
+Value: APC-Cdc20 mediated degradation of Nek2A
+Similarity Score: 86.00%
+Value: Phosphorylation of the APC/C
+Similarity Score: 86.00%
+
+Enter node label: super_enhancer 
+Enter property name: se_id
+Enter value to search for similar se_id: SE_00024
+Similar values found with their similarity percentages:
+Value: SE_00024
+Similarity Score: 100.00%
+Value: SE_06024
+Similarity Score: 95.00%
+Value: SE_00724
+Similarity Score: 95.00%
+Value: SE_10024
+Similarity Score: 95.00%
+Value: SE_00034
+Similarity Score: 95.00%
+Value: SE_00064
+Similarity Score: 95.00%
+Value: SE_00025
+Similarity Score: 95.00%
+Value: SE_08002
+Similarity Score: 90.00%
+Value: SE_00047
+Similarity Score: 90.00%
+Value: SE_00284
+Similarity Score: 90.00%
