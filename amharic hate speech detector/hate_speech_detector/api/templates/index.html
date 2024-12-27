@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hate Speech Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            resize: vertical;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .result span {
+            color: #FF6347;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hate Speech Detection</h1>
+    <form id="predictForm">
+        <textarea id="textInput" rows="4" placeholder="Enter text here..."></textarea><br>
+        <button type="submit">Check for Hate Speech</button>
+    </form>
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+    document.getElementById("predictForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        let text = document.getElementById("textInput").value;
+        let resultDiv = document.getElementById("result");
+
+        if (!text) {
+            resultDiv.textContent = "Please enter some text.";
+            return;
+        }
+
+        fetch('http://127.0.0.1:8000/api/predict/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ "text": text })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data.prediction.prediction);  
+
+            if (data.prediction.prediction === 0) {
+                // If the prediction is 0 (Free Speech)
+                resultDiv.innerHTML = `The text is <span style="color:green;">Free Speech</span>`;
+            } else if (data.prediction.prediction === 1) {
+                // If the prediction is 1 (Hate Speech)
+                resultDiv.innerHTML = `The text is <span style="color:red;">Hate Speech</span>`;
+            } else {
+                // If the prediction is an unexpected value
+                resultDiv.innerHTML = `Error: Unknown prediction result.`;
+            }
+        })
+        .catch(error => {
+            resultDiv.textContent = "Error occurred. Please try again.";
+        });
+    });
+</script>
+
+
+</body>
+</html>
